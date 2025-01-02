@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Verification Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+            flex-direction: column;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            display: none; /* Скрываем таблицу по умолчанию */
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My TikTok App</h1>
+        <p>Click the button below to view analytics.</p>
+        <button onclick="showAnalytics()">Show Analytics</button>
+        <table id="analyticsTable">
+            <thead>
+                <tr>
+                    <th>Video</th>
+                    <th>Views</th>
+                    <th>Likes</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Video 1</td>
+                    <td>1500</td>
+                    <td>300</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Video 2</td>
+                    <td>2500</td>
+                    <td>500</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Video 3</td>
+                    <td>1000</td>
+                    <td>200</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function showAnalytics() {
+            // Показываем таблицу при нажатии на кнопку
+            document.getElementById("analyticsTable").style.display = "table";
+        }
+    </script>
+</body>
+</html>
